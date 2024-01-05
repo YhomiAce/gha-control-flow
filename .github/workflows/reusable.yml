@@ -30,4 +30,4 @@ jobs:
         run: echo "Deploying and Uploading website..."
       - name: Set result output
         id: set-result
-        run: echo "::set-output name=response::success" #outputing succes string
+        run: echo "response=success" >> $GITHUB_OUTPUT #outputing succes string
